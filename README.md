@@ -13,6 +13,15 @@ This is not fully hardened for production use (i.e. does not check all places
 for division by zero, etc.) and may break, be susceptible to timing attacks,
 may cause your printer to halt and catch fire, etc. Use at your own risk.
 
+## Building
+
+Due to [license issues](https://github.com/NethermindEth/Math.Gmp.Native/pull/6)
+with the latest GMP .NET port, I have forked the repository and built this
+with a relative path reference to maintain license purity. You could however
+swap this out with the normal Nethermind fork from NuGet, however be aware if
+you use license compatibility analysis tools the buck will stop at this library
+for providing the correct type of license for conflict purposes.
+
 ## License
 
 Given its use of the GNU Multiple Precision library, it must be licensed in a
