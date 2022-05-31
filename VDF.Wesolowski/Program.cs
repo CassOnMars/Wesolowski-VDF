@@ -401,7 +401,7 @@
                     gmp_lib.mpz_fdiv_q(res, res, b);
                     gmp_lib.mpz_get_str(cp, 10, res);
                     
-                    yDict[cp.ToString()].InnerMultiply(
+                    yDict[cp.ToString()].Mul(
                         powers[(jj * k * l)],
                         new Context());
                 }
@@ -416,13 +416,13 @@
 
                     for (ulong b0 = 0; b0 < k0Exponent; b0++)
                     {
-                        z.InnerMultiply(
+                        z.Mul(
                             yDict[(b1 * k0Exponent + b0).ToString()],
                             new Context());
                     }
 
                     z.Pow(b1 * k0Exponent);
-                    h.InnerMultiply(z, new Context());
+                    h.Mul(z, new Context());
                 }
 
                 for (ulong b0 = 0; b0 < k0Exponent; b0++)
@@ -435,13 +435,13 @@
 
                     for (ulong b1 = 0; b1 < k1Exponent; b1++)
                     {                    
-                        z.InnerMultiply(
+                        z.Mul(
                             yDict[(b1 * k0Exponent + b0).ToString()],
                             new Context());
                     }
 
                     z.Pow(b0);
-                    h.InnerMultiply(z, new Context());
+                    h.Mul(z, new Context());
                 }
             }
 
@@ -506,7 +506,7 @@
             gmp_lib.mpz_powm(res, two, iterationsMPZ, prime);
             proof.Pow(prime);
             x.Pow(res);
-            proof.InnerMultiply(x, new Context());
+            proof.Mul(x, new Context());
 
             return gmp_lib.mpz_cmp(proof.a, y.a) == 0 &&
                 gmp_lib.mpz_cmp(proof.b, y.b) == 0 &&

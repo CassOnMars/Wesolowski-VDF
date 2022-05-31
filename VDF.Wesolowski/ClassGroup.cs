@@ -41,7 +41,7 @@ namespace VDF.Wesolowski
             return identity;
         }
 
-        public void InnerMultiply(ClassGroup rhs, Context ctx)
+        public void Mul(ClassGroup rhs, Context ctx)
         {
             // g = (lhs.b + rhs.b) / 2
             gmp_lib.mpz_add(ctx.congruence.g, this.b, rhs.b);
@@ -131,12 +131,12 @@ namespace VDF.Wesolowski
             gmp_lib.mpz_mul(ctx.a, ctx.j, ctx.lambda);
             gmp_lib.mpz_sub(this.c, this.c, ctx.a);
 
-            this.InnerReduce(ctx);
+            this.Reduce(ctx);
         }
 
-        public void InnerReduce(Context ctx)
+        public void Reduce(Context ctx)
         {
-            this.InnerNormalize(ctx);
+            this.Normalize(ctx);
 
             while (this.b._mp_size.Value < 0 ?
                 gmp_lib.mpz_cmp(this.a, this.c) >= 0 :
@@ -170,10 +170,10 @@ namespace VDF.Wesolowski
                 gmp_lib.mpz_add(this.c, this.c, ctx.prev_a);
             }
 
-            this.InnerNormalize(ctx);
+            this.Normalize(ctx);
         }
 
-        public void InnerNormalize(Context ctx)
+        public void Normalize(Context ctx)
         {
             gmp_lib.mpz_neg(ctx.negative_a, this.a);
 
@@ -223,7 +223,7 @@ namespace VDF.Wesolowski
             gmp_lib.mpz_mul(this.c, ctx.mu, ctx.mu);
             gmp_lib.mpz_sub(this.c, this.c, ctx.m);
 
-            this.InnerReduce(ctx);
+            this.Reduce(ctx);
         }
 
         public void RepeatedSquare(ulong iterations)
@@ -251,7 +251,7 @@ namespace VDF.Wesolowski
 
                 if (odd)
                 {
-                    state.InnerMultiply(this, new Context());
+                    state.Mul(this, new Context());
                 }
 
                 if (exp._mp_size.Value == 0)
