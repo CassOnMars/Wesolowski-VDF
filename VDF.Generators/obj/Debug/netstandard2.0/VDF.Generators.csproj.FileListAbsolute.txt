@@ -1,0 +1,10 @@
+C:\Development\wolfpack\VDF\VDF.Generators\obj\Debug\netstandard2.0\VDF.Generators.csproj.AssemblyReference.cache
+C:\Development\wolfpack\VDF\VDF.Generators\obj\Debug\netstandard2.0\VDF.Generators.GeneratedMSBuildEditorConfig.editorconfig
+C:\Development\wolfpack\VDF\VDF.Generators\obj\Debug\netstandard2.0\VDF.Generators.AssemblyInfoInputs.cache
+C:\Development\wolfpack\VDF\VDF.Generators\obj\Debug\netstandard2.0\VDF.Generators.AssemblyInfo.cs
+C:\Development\wolfpack\VDF\VDF.Generators\obj\Debug\netstandard2.0\VDF.Generators.csproj.CoreCompileInputs.cache
+C:\Development\wolfpack\VDF\VDF.Generators\bin\Debug\netstandard2.0\VDF.Generators.deps.json
+C:\Development\wolfpack\VDF\VDF.Generators\bin\Debug\netstandard2.0\VDF.Generators.dll
+C:\Development\wolfpack\VDF\VDF.Generators\bin\Debug\netstandard2.0\VDF.Generators.pdb
+C:\Development\wolfpack\VDF\VDF.Generators\obj\Debug\netstandard2.0\VDF.Generators.dll
+C:\Development\wolfpack\VDF\VDF.Generators\obj\Debug\netstandard2.0\VDF.Generators.pdb

@@ -1,0 +1,81 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "VDF.Wesolowski/1.0.0": {
+        "dependencies": {
+          "BouncyCastle.NetCore": "1.8.10",
+          "MathGmp.Native": "1.0.0",
+          "Microsoft.Net.Compilers.Toolset": "4.1.0"
+        },
+        "runtime": {
+          "VDF.Wesolowski.dll": {}
+        }
+      },
+      "BouncyCastle.NetCore/1.8.10": {
+        "runtime": {
+          "lib/netstandard2.0/BouncyCastle.Crypto.dll": {
+            "assemblyVersion": "1.8.8.0",
+            "fileVersion": "1.8.20265.1"
+          }
+        }
+      },
+      "EWSoftware.SHFB/2020.3.6": {},
+      "EWSoftware.SHFB.NETFramework/4.8.0": {},
+      "Microsoft.Net.Compilers.Toolset/4.1.0": {},
+      "MathGmp.Native/1.0.0": {
+        "dependencies": {
+          "EWSoftware.SHFB": "2020.3.6",
+          "EWSoftware.SHFB.NETFramework": "4.8.0"
+        },
+        "runtime": {
+          "MathGmp.Native.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "VDF.Wesolowski/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BouncyCastle.NetCore/1.8.10": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Uqd1mSV+ewDNuX4G0lXds4TM2DYyFTnCUZAjZLxmxglKSCbTZe2R+TQV/u369J/bXaNZ6s/1sedCtl/5u+66iQ==",
+      "path": "bouncycastle.netcore/1.8.10",
+      "hashPath": "bouncycastle.netcore.1.8.10.nupkg.sha512"
+    },
+    "EWSoftware.SHFB/2020.3.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-YsgOLthqsBAPnHhlRzeWlDd75v9WflN8QxyjXzPb5Ks00OQAMnfcTb/pJUsc/sVxzCWpSfypz2mu/31eugCF4g==",
+      "path": "ewsoftware.shfb/2020.3.6",
+      "hashPath": "ewsoftware.shfb.2020.3.6.nupkg.sha512"
+    },
+    "EWSoftware.SHFB.NETFramework/4.8.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-IY7Y32Q8uUvVvHtQkNmDMFLuNxoNnVeOPc3n85RC8XvkNfYBUC9PiZElhH9o8p7pOqLKNYpO2bf3kQ0zifK14Q==",
+      "path": "ewsoftware.shfb.netframework/4.8.0",
+      "hashPath": "ewsoftware.shfb.netframework.4.8.0.nupkg.sha512"
+    },
+    "Microsoft.Net.Compilers.Toolset/4.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-5rHeDWKlEDLKLIM8JigeXz5b/JnIur7eC0HkgIAh9tPee9v3iAGt28Jgd4/thAJTdaevPHo44TweW8fvAjWIow==",
+      "path": "microsoft.net.compilers.toolset/4.1.0",
+      "hashPath": "microsoft.net.compilers.toolset.4.1.0.nupkg.sha512"
+    },
+    "MathGmp.Native/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

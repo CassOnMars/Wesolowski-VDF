@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "WLvS8BWmLQOxgFMVxpJpNSTrcn4zHUU9L6pqPufJCjDjEcSvqykiK20RRaN0ZdeQHcoitr4bV2/H9Q2l0ZkvQQ==",
+  "success": true,
+  "projectFilePath": "C:\\Development\\wolfpack\\VDF\\VDF.Wesolowski\\VDF.Wesolowski.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\cassa\\.nuget\\packages\\bouncycastle.netcore\\1.8.10\\bouncycastle.netcore.1.8.10.nupkg.sha512",
+    "C:\\Users\\cassa\\.nuget\\packages\\ewsoftware.shfb\\2020.3.6\\ewsoftware.shfb.2020.3.6.nupkg.sha512",
+    "C:\\Users\\cassa\\.nuget\\packages\\ewsoftware.shfb.netframework\\4.8.0\\ewsoftware.shfb.netframework.4.8.0.nupkg.sha512",
+    "C:\\Users\\cassa\\.nuget\\packages\\microsoft.net.compilers.toolset\\4.1.0\\microsoft.net.compilers.toolset.4.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}
